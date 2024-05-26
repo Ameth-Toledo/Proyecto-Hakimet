@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝑰𝒏𝒊𝒄𝒊𝒂𝒓 𝑺𝒆𝒔𝒊𝒐𝒏 - 𝑯𝒂𝒌𝒊𝒎𝒆𝒕</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="registro.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="topbar">
+        <img src="logotipo-Hakimet.png" alt="Hakimet Logo" class="logo">
+        <button class="login-btn" onclick="redirectToReproduct4()">
+            <img src="login.png" alt="Login" class="login-icon">
+            𝗟𝗼𝗴𝗶𝗻
+        </button>
+    </div>
+
+    <div class="login-container">
+        <label for="usser">𝗨𝘀𝘂𝗮𝗿𝗶𝗼:</label>
+        <input id="RUser" type="text" value=" "/>
+        <label for="contraseña">𝗖𝗼𝗻𝘁𝗿𝗮𝘀𝗲𝗻𝗮:</label>
+        <input type="password" id="RPass">
+        <label for="confirm">𝗰𝗼𝗻𝗳𝗶𝗿𝗺𝗮𝗿 𝗰𝗼𝗻𝘁𝗿𝗮𝘀𝗲𝗻𝗮:</label>
+        <input type="password" id="RConfirm">
+        <label class="show-password-label" for="showPass">
+            <input type="checkbox" id="showPass" onclick="togglePasswordVisibility()">
+            𝗠𝗼𝘀𝘁𝗿𝗮𝗿 𝗰𝗼𝗻𝘁𝗿𝗮𝘀𝗲𝗻𝗮
+        </label>
+        <br>
+        <button onclick="Registrar()">𝗔𝗰𝗲𝗽𝘁𝗮𝗿</button>
+        <div class="custom-box"></div>
+        <p class="register-text">si aun no tienes cuenta, da click en el botón azul de registrarse para crear una nueva cuenta.</p>
+    </div>
+    <script src="registro.js"></script>
+    <script src="listaAnimes.js"></script>
+</body>
+</html>

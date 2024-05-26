@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝑯𝒂𝒌𝒊𝒎𝒆𝒕</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="topbar">
+        <img src="menu.png" alt="Menu" class="menu-icon" onclick="toggleMenu()">
+        <img src="logotipo-Hakimet.png" alt="Hakimet Logo" class="logo">
+        <input type="text" id="search-input" class="search-input" placeholder="𝑩𝒖𝒔𝒄𝒂𝒓 𝒂𝒏𝒊𝒎𝒆" onkeypress="buscarAnime(event)">
+        <button class="login-btn" onclick="redirectToReproduct4()">
+            <img src="login.png" alt="Login" class="login-icon">
+            𝗟𝗼𝗴𝗶𝗻
+        </button>
+    </div>
+
+    <div id="message" style="color: red;"></div>
+
+    <div class="content-container">
+        <div class="image-text-overlay">
+            <img src="https://img.asmedia.epimg.net/resizer/v2/WSIQEFB3LJAETNCSTCHHEU6L54.jpg?auth=3c60b2b1736948e30f7ba2ee3925355de1dcbdbb838aac82cef7104e69736191&width=1472&height=828&smart=true" alt="Demon Slayer" class="demon-slayer-image">
+            <div class="gradient-overlay"></div>
+            <div class="text-overlay">
+                <h1>𝗗𝗲𝗺𝗼𝗻 𝗦𝗹𝗮𝘆𝗲𝗿</h1>
+                <p>𝙀𝙨𝙩𝙖𝙢𝙤𝙨 𝙚𝙣 𝙡𝙖 𝙚𝙧𝙖 𝙏𝙖𝙞𝙨𝙝𝙤 𝙙𝙚 𝙅𝙖𝙥𝙤𝙣. 𝙏𝙖𝙣𝙟𝙞𝙧𝙤, 𝙪𝙣 𝙟𝙤𝙫𝙚𝙣 𝙦𝙪𝙚 𝙨𝙚 𝙜𝙖𝙣𝙖 𝙡𝙖 𝙫𝙞𝙙𝙖 𝙫𝙚𝙣𝙙𝙞𝙚𝙣𝙙𝙤 𝙘𝙖𝙧𝙗𝙤𝙣, 𝙙𝙚𝙨𝙘𝙪𝙗𝙧𝙚 𝙪𝙣 𝙙𝙞𝙖 𝙦𝙪𝙚 𝙨𝙪 𝙛𝙖𝙢𝙞𝙡𝙞𝙖 𝙝𝙖 𝙨𝙞𝙙𝙤 𝙖𝙨𝙚𝙨𝙞𝙣𝙖𝙙𝙖 𝙥𝙤𝙧 𝙪𝙣 
+                    𝙙𝙚𝙢𝙤𝙣𝙞𝙤. 𝙋𝙖𝙧𝙖 𝙚𝙢𝙥𝙚𝙤𝙧𝙖𝙧 𝙡𝙖𝙨 𝙘𝙤𝙨𝙖𝙨, 𝙨𝙪 𝙝𝙚𝙧𝙢𝙖𝙣𝙖 𝙢𝙚𝙣𝙤𝙧 𝙉𝙚𝙯𝙪𝙠𝙤, 𝙡𝙖 𝙪𝙣𝙞𝙘𝙖 𝙨𝙪𝙥𝙚𝙧𝙫𝙞𝙫𝙞𝙚𝙣𝙩𝙚 𝙙𝙚 𝙡𝙖 𝙢𝙖𝙨𝙖𝙘𝙧𝙚, 𝙝𝙖 𝙨𝙪𝙛𝙧𝙞𝙙𝙤 𝙪𝙣𝙖 𝙩𝙧𝙖𝙣𝙨𝙛𝙤𝙧𝙢𝙖𝙘𝙞𝙤𝙣 𝙚𝙣 𝙙𝙚𝙢𝙤𝙣𝙞𝙤. 
+                    𝘿𝙚𝙨𝙩𝙧𝙤𝙯𝙖𝙙𝙤 𝙥𝙤𝙧 𝙡𝙤𝙨 𝙖𝙘𝙤𝙣𝙩𝙚𝙘𝙞𝙢𝙞𝙚𝙣𝙩𝙤𝙨, 𝙏𝙖𝙣𝙟𝙞𝙧𝙤 𝙙𝙚𝙘𝙞𝙙𝙚 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙞𝙧𝙨𝙚 𝙚𝙣 𝙪𝙣 𝙘𝙖𝙯𝙖𝙙𝙤𝙧 𝙙𝙚 𝙙𝙚𝙢𝙤𝙣𝙞𝙤𝙨 𝙥𝙖𝙧𝙖 𝙥𝙤𝙙𝙚𝙧 𝙙𝙚𝙫𝙤𝙡𝙫𝙚𝙧 𝙖 𝙨𝙪 𝙝𝙚𝙧𝙢𝙖𝙣𝙖 𝙖 𝙡𝙖 𝙣𝙤𝙧𝙢𝙖𝙡𝙞𝙙𝙖𝙙 𝙮 𝙢𝙖𝙩𝙖𝙧 𝙖𝙡 𝙙𝙚𝙢𝙤𝙣𝙞𝙤 𝙦𝙪𝙚 𝙢𝙖𝙨𝙖𝙘𝙧𝙤 𝙖 𝙨𝙪 𝙛𝙖𝙢𝙞𝙡𝙞𝙖.</p>
+                <button class="ver-ahora-btn" onclick="redirectToReproduct1()">𝗩𝗲𝗿 𝗮𝗵𝗼𝗿𝗮</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-container">
+        <h2>𝑨𝒏𝒊𝒎𝒆𝒔</h2>
+        <div class="bar"></div>
+    </div>
+
+    <div class="image-container">
+        <img src="./imgs/Tensei_Shitara_Temp01.jpg" alt="Tensei Shitara" class="bottom-image">
+        <img src="./imgs/Black_Clover_Latino.jpg" alt="Black Clover" class="bottom-image">
+        <img src="./imgs/One_piece_Latino.jpg" alt="One Piece" class="bottom-image" onclick="redirectToReproduct3()">
+        <img src="./imgs/Jujutsu_Kaisen_Latino.jpg" alt="Jujutsu Kaisen" class="bottom-image" onclick="redirectToReproduct5()">
+        <img src="./imgs/Jujutsu_Kaisen_Temporada_2_Latino.jpg" alt="Jujutsu Kaisen Temporada 2" class="bottom-image" onclick="redirectToReproduct6()">
+        <img src="./imgs/Kimetsu_no_Yaiba_Demon_Slayer_Temporada_1_Latino.jpg" alt="Demon Slayer" class="bottom-image" onclick="redirectToReproduct1()">
+        <img src="./imgs/Shingeki_no_Kyojin_Ataque_a_los_Titanes_Temporada_1_Latino.jpg" alt="Ataque de los Titanes" class="bottom-image">
+        <img src="./imgs/Mashle_Latino.jpg" alt="Mashle" class="bottom-image">
+        <img src="./imgs/Mashle_Temporada_2_Latino.jpg" alt="Mashle Temporada 2" class="bottom-image">
+        <img src="./imgs/One_Punch_Man_Temporada_2_Latino.jpg" alt="One Punch Man" class="bottom-image">
+        <img src="./imgs/Wind_Breaker.jpg" alt="Wind Breaker" class="bottom-image">
+        <img src="./imgs/Tensei_Shitara_Slime_Datta_Ken_3.jpg" alt="Tensei Shitara" class="bottom-image">
+    </div>
+
+    <div class="text-container">
+        <h2>𝑷𝒆𝒍𝒊𝒄𝒖𝒍𝒂𝒔</h2>
+        <div class="bar"></div>
+    </div>
+
+    <div class="image-container">
+        <img src="./peliculas-img/Ataque a los Titanes La Pelicula EL Arco y la Flecha Escarlata Latino.jpg" alt="Ataque a los Titanes" class="bottom-image">
+        <img src="./peliculas-img/Ataque a los Titanes La Pelicula El rugido del desperta Latino.jpg" alt="Ataque el rugido" class="bottom-image">
+        <img src="./peliculas-img/Bayonetta Destino Sangriento Latino.jpg" alt="Bayonetta" class="bottom-image">
+        <img src="./peliculas-img/Blame! La Película Latino.jpg" alt="Blame" class="bottom-image">
+        <img src="./peliculas-img/Demon Slayer Kimetsu no Yaiba To the Hashira Training Latino.jpg" alt="Demon Slayer" class="bottom-image">
+        <img src="./peliculas-img/Cowboy Bebop La Pelicula Llamando a las puertas del cielo Latino.jpg" alt="Cowboy Bebop" class="bottom-image">
+        <img src="./peliculas-img/Ghost in the Shell Arise Border 4 Fantasma solitario.jpg" alt="Ghost in the Shell" class="bottom-image">
+        <img src="./peliculas-img/Kuramerukagari Pelicula.jpg" alt="Kuramerukagari" class="bottom-image">
+        <img src="./peliculas-img/La tumba de las luciernagas Latino.jpg" alt="La tumba de las luciernagas" class="bottom-image">
+        <img src="./peliculas-img/Shiki Oriori Sabores de la juventud Latino.jpg" alt="Shiki Oriori" class="bottom-image">
+        <img src="./peliculas-img/Youjo Senki La Pelicula Latino.jpg" alt="Youjo Senki" class="bottom-image">
+        <img src="./peliculas-img/Sword Art Online Progressive Movie Kuraki Yuuyami no Scherzo.jpg" alt="Sword Art Online" class="bottom-image">
+    </div>
+
+    <div id="side-menu" class="side-menu">
+        <a href="#" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <a href="#">𝑯𝒐𝒎𝒆</a>
+        <a href="animes.html">𝑨𝒏𝒊𝒎𝒆𝒔</a>
+        <a href="peliculas.html">𝑷𝒆𝒍𝒊𝒄𝒖𝒍𝒂𝒔</a>
+        <a href="#">𝑪𝒐𝒏𝒕𝒂𝒄𝒕𝒐</a>
+    </div>
+
+    <div id="not-found-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>No se encontró el anime.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logotipo-Hakimet2.png" alt="Logo">
+            </div>
+            <div class="social-bar">
+                <a href="https://www.facebook.com/profile.php?id=100084591330047" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/ameth_toled/?hl=es" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+                <a href="https://wa.me/qr/IB7N3W2OXSFHL1" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp"></a>
+            </div>
+            <div class="footer-text">
+                Hakimet Ningun video se encuentra alojado en nuestros servidores. Todos los videos enlazados son tomados de internet, de sitios webs gratuitos. Todos los contenidos son proporcionados por terceros no afiliados.
+            </div>
+        </div>
+        <div class="footer-background-overlay"></div>
+        <img src="https://elcomercio.pe/resizer/wYkqgXwOqgwhXSiZRNVopn5HumE=/1200x675/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/IAZ53YXFIZCLXOQHCTT4JDQB24.jpg" alt="footer-demon" class="footer-background">
+        <div class="footer-copyright">
+            Copyright © 2024 Hakimet Anime. All Rights Reserved
+        </div>
+    </footer>
+    
+    <script src="listaAnimes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

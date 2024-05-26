@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝑷𝒆𝒍𝒊𝒄𝒖𝒍𝒂𝒔</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="peliculas.css">
+</head>
+<body>
+    <div class="topbar">
+        <img src="menu.png" alt="Menu" class="menu-icon" onclick="toggleMenu()">
+        <img src="logotipo-Hakimet.png" alt="Hakimet Logo" class="logo">
+        <input type="text" class="search-input" placeholder="𝑩𝒖𝒔𝒄𝒂𝒓 𝒂𝒏𝒊𝒎𝒆" oninput="buscarAnime(this)">
+        <button class="login-btn">
+            <img src="login.png" alt="Login" class="login-icon">
+            𝗟𝗼𝗴𝗶𝗻
+        </button>
+    </div>
+
+    <div class="image-container">
+        <img src="./peliculas-img/Ataque a los Titanes La Pelicula EL Arco y la Flecha Escarlata Latino.jpg" alt="Ataque titanes" class="bottom-image">
+        <img src="./imgs/Black_Clover_Latino.jpg" alt="Black Clover" class="bottom-image">
+        <img src="./peliculas-img/One_Piece_2024.jpg" alt="One Piece Latino" class="bottom-image">
+        <img src="./imgs/Jujutsu_Kaisen_Latino.jpg" alt="Jujutsu Kaisen Latino" class="bottom-image">
+        <img src="./imgs/Jujutsu_Kaisen_Temporada_2_Latino.jpg" alt="Jujutsu Kaisen Temporada 2 Latino" class="bottom-image">
+        <img src="./imgs/Kimetsu_no_Yaiba_Demon_Slayer_Temporada_1_Latino.jpg" alt="Kimetsu no Yaiba Demon Slayer Temporada 1 Latino" class="bottom-image" onclick="redirectToReproduct1()">
+        <img src="./imgs/Shingeki_no_Kyojin_Ataque_a_los_Titanes_Temporada_1_Latino.jpg" alt="Shingeki_no_Kyojin_Ataque_a_los_Titanes_Temporada_1_Latino" class="bottom-image">
+        <img src="./imgs/Mashle_Latino.jpg" alt="Mashle_Latino" class="bottom-image">
+        <img src="./imgs/Mashle_Temporada_2_Latino.jpg" alt="Mashle_Temporada_2_Latino" class="bottom-image">
+        <img src="./imgs/One_Punch_Man_Temporada_2_Latino.jpg" alt="One_Punch_Man_Temporada_2_Latino" class="bottom-image">
+        <img src="./imgs/Wind_Breaker.jpg" alt="Wind_Breaker" class="bottom-image">
+        <img src="./imgs/Tensei_Shitara_Slime_Datta_Ken_3.jpg" alt="Tensei_Shitara_Slime_Datta_Ken_3" class="bottom-image">
+    </div>
+    
+    <div id="side-menu" class="side-menu">
+        <a href="#" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <a href="index.html">𝑯𝒐𝒎𝒆</a>
+        <a href="#">𝑨𝒏𝒊𝒎𝒆𝒔</a>
+        <a href="#">𝑷𝒆𝒍𝒊𝒄𝒖𝒍𝒂𝒔</a>
+        <a href="#">𝑪𝒐𝒏𝒕𝒂𝒄𝒕𝒐</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

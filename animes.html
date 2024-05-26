@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝑨𝒏𝒊𝒎𝒆𝒔</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="animes.css">
+</head>
+<body>
+    <div class="topbar">
+        <img src="menu.png" alt="Menu" class="menu-icon" onclick="toggleMenu()">
+        <img src="logotipo-Hakimet.png" alt="Hakimet Logo" class="logo">
+        <input type="text" class="search-input" placeholder="𝑩𝒖𝒔𝒄𝒂𝒓 𝒂𝒏𝒊𝒎𝒆" oninput="buscarAnime(this)">
+        <button class="login-btn">
+            <img src="login.png" alt="Login" class="login-icon">
+            𝗟𝗼𝗴𝗶𝗻
+        </button>
+    </div>
+
+    <div class="image-container">
+        <img src="./imgs/Tensei_Shitara_Temp01.jpg" alt="One Piece" class="bottom-image">
+        <img src="./imgs/Black_Clover_Latino.jpg" alt="Black Clover" class="bottom-image">
+        <img src="./imgs/One_piece_Latino.jpg" alt="One Piece Latino" class="bottom-image" onclick="redirectToReproduct3()">
+        <img src="./imgs/Jujutsu_Kaisen_Latino.jpg" alt="Jujutsu Kaisen Latino" class="bottom-image">
+        <img src="./imgs/Jujutsu_Kaisen_Temporada_2_Latino.jpg" alt="Jujutsu Kaisen Temporada 2 Latino" class="bottom-image">
+        <img src="./imgs/Kimetsu_no_Yaiba_Demon_Slayer_Temporada_1_Latino.jpg" alt="Kimetsu no Yaiba Demon Slayer Temporada 1 Latino" class="bottom-image" onclick="redirectToReproduct1()">
+        <img src="./imgs/Shingeki_no_Kyojin_Ataque_a_los_Titanes_Temporada_1_Latino.jpg" alt="Shingeki_no_Kyojin_Ataque_a_los_Titanes_Temporada_1_Latino" class="bottom-image">
+        <img src="./imgs/Mashle_Latino.jpg" alt="Mashle_Latino" class="bottom-image">
+        <img src="./imgs/Mashle_Temporada_2_Latino.jpg" alt="Mashle_Temporada_2_Latino" class="bottom-image">
+        <img src="./imgs/One_Punch_Man_Temporada_2_Latino.jpg" alt="One_Punch_Man_Temporada_2_Latino" class="bottom-image">
+        <img src="./imgs/Wind_Breaker.jpg" alt="Wind_Breaker" class="bottom-image">
+        <img src="./imgs/Tensei_Shitara_Slime_Datta_Ken_3.jpg" alt="Tensei_Shitara_Slime_Datta_Ken_3" class="bottom-image">
+        <img src="./imgs/Highspeed_Etoile.jpg" alt="Highspeed_Etoile" class="bottom-image">
+        <img src="./imgs/Urusei_Yatsura_(2022)_2nd_Season.jpg" alt="Urusei_Yatsura_" class="bottom-image">
+        <img src="./imgs/Nijiyon_Animation_2.jpg" alt="Nijiyon_Animation_2" class="bottom-image">
+        <img src="./imgs/Mahouka_Koukou_No_Rettousei_Season_3.jpg" alt="Mahouka_Koukou_No_Rettousei_Season_3" class="bottom-image">
+        <img src="./imgs/Astro_Note.jpg" alt="Astro_Note" class="bottom-image">
+        <img src="./imgs/Henjin_No_Salad_Bowl.jpg" alt="Henjin_No_Salad_Bowl" class="bottom-image">
+        <img src="./imgs/Hananoi_Kun_To_Koi_No_Yamai.jpg" alt="Hananoi_Kun_To_Koi_No_Yamai" class="bottom-image">
+        <img src="./imgs/Bartender_Latino.jpg" alt="Bartender_Latino" class="bottom-image">
+        <img src="./imgs/Aoi_Hana_Flores_Azules_Latino.jpg" alt="Aoi_Hana_Flores_Azules_Latino" class="bottom-image" onclick="redirectToReproduct2()">
+        <img src="./imgs/Blue_Archive_The_Animation.jpg" alt="Blue_Archive_The_Animation" class="bottom-image">
+        <img src="./imgs/Yuru_Camp_Season_3.jpg" alt="Yuru_Camp_Season_3" class="bottom-image">
+        <img src="./imgs/Maou_no_Ore_ga_Dorei_Elf_wo_Yome_ni_Shitanda_ga_Dou_Medereba_Ii.jpg" alt="Maou_no_Ore_ga_Dorei_Elf_wo_Yome_ni_Shitanda_ga_Dou_Medereba_Ii" class="bottom-image">
+        <img src="./imgs/Kuroko_no_Basket_Temporada_2_Latino.jpg" alt="Kuroko_no_Basket_Temporada_2_Latino" class="bottom-image">
+        <img src="./imgs/Futakoi_Alternative_Latino.jpg" alt="Futakoi_Alternative_Latino" class="bottom-image">
+        <img src="./imgs/Tragones_y_mazmorras_Dungeon_Meshi.jpg" alt="Tragones_y_mazmorras_Dungeon_Meshi" class="bottom-image">
+        <img src="./imgs/Tokyo_Magnitude_8_Latino.jpg" alt="Tokyo_Magnitude_8_Latino"class="bottom-image">
+        <img src="./imgs/Sister_Princess_Latino.jpg" alt="Sister_Princess_Latino"class="bottom-image">
+        <img src="./imgs/WIND_BREAKER_Latino.jpg" alt="WIND_BREAKER_Latino" class="bottom-image">
+    </div>
+    
+    <div id="side-menu" class="side-menu">
+        <a href="#" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <a href="index.html">𝑯𝒐𝒎𝒆</a>
+        <a href="#">𝑨𝒏𝒊𝒎𝒆𝒔</a>
+        <a href="#">𝑷𝒆𝒍𝒊𝒄𝒖𝒍𝒂𝒔</a>
+        <a href="#">𝑪𝒐𝒏𝒕𝒂𝒄𝒕𝒐</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
